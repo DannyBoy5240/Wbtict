@@ -6,11 +6,6 @@
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
       <link href="main.css" rel="stylesheet">
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
-
    </head>
 
    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -37,6 +32,12 @@
             else if ($(this).attr('id') === 'btnradio2') {
                priceId.show();
                pirceExampleId.hide();
+               $('#monthPrice1').text('499');
+               $('#monthPrice2').text('699');
+               $('#monthPrice3').text('999');
+               $('#monthly-1').text("pro Monat");
+               $('#monthly-2').text("pro Monat")
+               $('#monthly-3').text("pro Monat")
             }
             else if ($(this).attr('id') === 'btnradio3') {
                priceId.show();
@@ -44,6 +45,9 @@
                $('#monthPrice1').text('1499');
                $('#monthPrice2').text('2299');
                $('#monthPrice3').text('2999');
+               $('#monthly-1').text("");
+               $('#monthly-2').text("")
+               $('#monthly-3').text("")
             }
             else if ($(this).attr('id') === 'btnradio4') {
                priceId.show();
@@ -51,6 +55,9 @@
                $('#monthPrice1').text('3999');
                $('#monthPrice2').text('6999');
                $('#monthPrice3').text('11799');
+               $('#monthly-1').text("");
+               $('#monthly-2').text("")
+               $('#monthly-3').text("")
             }
          });
       })
@@ -62,25 +69,25 @@
       <!-- div_1 -->
       <div class="size-style bg-black">
          <div class="row padding-top-30">
-            <div class="col-12 col-md-6 col-lg-6 d-flex align-items-start justify-content-start padding-right-70 padding-left-70">
-               <img src="images/Logo_mark.png" alt="mark" width="120" height="120" class="img-fluid" />
+            <div class="col-12 col-md-6 col-lg-6 d-flex align-items-start justify-content-start padding-right-70 padding-left-70" style="margin-bottom: 30px;">
+               <a href="index.html"><img src="images/Logo_mark.png" alt="mark" width="120" height="120" class="img-fluid" /></a>
             </div>
-            <div class="col-12 col-md-6 col-lg-6 d-flex align-items-center justify-content-start padding-right-70 padding-left-70">
+            <div class="col-12 col-md-6 col-lg-6 d-flex align-items-center justify-content-start nav-pl-70 nav-pr-70" style="margin-bottom: 30px;">
                <ul class="nav font-family-2 font-size-4">
                   <li class="nav-item">
-                     <a class="nav-link hover" href="index.html">Home<span class="nav-circle align-middle"></span></a>
+                     <a class="nav-link nav-link-custom-white" href="index.html">Home<span class="nav-circle align-middle"></span></a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="2-About.html">Über uns<span class="nav-circle align-middle"></span></a>
+                     <a class="nav-link nav-link-custom-white" href="2-About.html">Über uns<span class="nav-circle align-middle"></span></a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="3-Price.html">Preise<span class="nav-circle align-middle"></span></a>
+                     <a class="nav-link nav-link-custom-blue" href="3-Price.html">Preise<span class="nav-circle-blue align-middle"></span></a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="4-Portfolio.html">Portfolio<span class="nav-circle align-middle"></span></a>
+                     <a class="nav-link nav-link-custom-white" href="4-Portfolio.html">Portfolio<span class="nav-circle align-middle"></span></a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="5-Contact.html">Kontakt<span class="nav-circle align-middle"></span></a>
+                     <a class="nav-link nav-link-custom-white" href="5-Contact.html">Kontakt<span class="nav-circle align-middle"></span></a>
                   </li>
                </ul>
             </div>
@@ -113,13 +120,13 @@
       <!-- div_3 -->
       <div class="vertical-split" id="price-example-id">
 
-         <div class="row price2-pl-70 price2-pr-70 price2-mb-20">
+         <div class="row price2-pl-70 price2-pr-70 price2-mb-20" style="margin-bottom: 20px;">
 
             
             <div class="col-12 col-md-6 col-lg-6">
                <div class="card">
                   <div class="card-body">
-                     <p class="price2-fontSize-47  font-family-1 text-center" id="card-titleColor" style="margin-top: 15px;">Graphik Paket</p>
+                     <p class="price2-fontSize-47  font-family-1 text-center" id="card-titleColor" style="margin-top: 15px;">Graphik</p>
                      <div class="price2-fontSize-24 text-center price2-pl-150 price2-pr-150">
                         <span class="price2-fontSize-37 font-family-1">CHF</span>
                         <span class="price2-fontSize-88 font-family-1">699</span>
@@ -129,8 +136,8 @@
                         </span>
                         <br><br>
                      </div>
-                     <a href="https://calendly.com/" type="button" class="btn btn-custom-1 font-size-3 font-family-2 color-3" style="width: 100%;" id="card-buttonColor">Jetzt starten</a>
-                     <a href="https://calendly.com/" type="button" class="btn btn-custom-2 font-size-3 font-family-2 color-5" style="width: 100%;">Einen Anruf Vereinbaren</a>
+                     <a href="https://calendly.com/webtict23/meeting" target="_blank" type="button" class="btn btn-custom-1 font-size-3 font-family-2 color-3" style="width: 100%;" id="card-buttonColor">Jetzt Starten</a>
+                     <a href="https://calendly.com/webtict23/meeting" target="_blank" type="button" class="btn btn-custom-2 font-size-3 font-family-2 color-5" style="width: 100%;">Einen Anruf Vereinbaren</a>
                   </div>
          
                   <ul class="list-group list-group-flush"></ul>
@@ -138,7 +145,7 @@
                   <div class="card-body">
                      <div>
                         <p class="price2-fontSize-30 font-family-1">Dienste</p>
-                        <p class="price2-fontSize-18 font-family-2">Alles in unserem Graphik Paket...</p>
+                        <p class="price2-fontSize-18 font-family-2">Alles in unserem Graphik...</p>
                      </div>
                      <div class="row text-break">
                         <div class="col-12 col-md-12 col-lg-6">
@@ -196,7 +203,7 @@
                </div>
             </div>
 
-            <div class="col-12 col-md-6 col-lg-6">
+            <div class="col-12 col-md-6 col-lg-6" style="margin-bottom: 20px;">
                <div class="card">
                   <div class="card-body">
                      <p class="price2-fontSize-32  font-family-1 text-center price2-mt-38" id="card-titleColor">Website Kreation & Optimierung</p>
@@ -209,8 +216,8 @@
                         </span>
                         <br><br>
                      </div>
-                     <a href="https://calendly.com/" type="button" class="btn btn-custom-1 font-size-3 font-family-2 color-3" style="width: 100%;" id="card-buttonColor">Jetzt starten</a>
-                     <a href="https://calendly.com/" type="button" class="btn btn-custom-2 font-size-3 font-family-2 color-5" style="width: 100%;">Einen Anruf Vereinbaren</a>
+                     <a href="https://calendly.com/webtict23/meeting" target="_blank" type="button" class="btn btn-custom-1 font-size-3 font-family-2 color-3" style="width: 100%;" id="card-buttonColor">Jetzt Starten</a>
+                     <a href="https://calendly.com/webtict23/meeting" target="_blank" type="button" class="btn btn-custom-2 font-size-3 font-family-2 color-5" style="width: 100%;">Einen Anruf Vereinbaren</a>
                   </div>
          
                   <ul class="list-group list-group-flush"></ul>
@@ -270,7 +277,7 @@
 
          <div class="row px-lg-4 mx-0" style="width: 100%; height: auto;">
 
-            <div class="col-12 col-md-6 col-lg-4" style="padding-left: 20px; padding-right: 20px;">
+            <div class="col-12 col-md-6 col-lg-4" style="padding-left: 20px; padding-right: 20px; margin-bottom: 20px;">
                <div class="card" >
                   <div class="card-body">
                      <div class="row d-flex justify-content-center align-items-center">
@@ -283,14 +290,14 @@
                      </div>
                      <span class="font-size-26 font-family-1">CHF</span>
                      <span class="font-size-31 font-family-1" id="monthPrice1">499</span>
-                     <span class="font-size-4 font-family-1">pro monat</span>
+                     <span class="font-size-4 font-family-1" id="monthly-1">pro monat</span>
                      <br>
                      <span class="font-size-18 font-family-2">
                         Dieses Paket umfasst Werbe Kampagnen Erstellung.
                      </span>
                      <br><br><br><br>
-                     <a href="3-Price.html" type="button" class="btn btn-custom-1 font-size-3 font-family-2 color-3" style="width: 100%;" id="card-buttonColor">Jetzt starten</a>
-                     <a href="https://calendly.com/" type="button" class="btn btn-custom-2 font-size-3 font-family-2 color-5" style="width: 100%;">Einen Anruf Vereinbaren</a>
+                     <a href="https://calendly.com/webtict23/meeting" type="button" class="btn btn-custom-1 font-size-3 font-family-2 color-3" style="width: 100%;" id="card-buttonColor">Jetzt Starten</a>
+                     <a href="https://calendly.com/webtict23/meeting" target="_blank" type="button" class="btn btn-custom-2 font-size-3 font-family-2 color-5" style="width: 100%;">Einen Anruf Vereinbaren</a>
                   </div>
 
                   <ul class="list-group list-group-flush"></ul>
@@ -315,12 +322,12 @@
                         <span class="caption_font">Vollständige Automatisierung</span>
                      </div>
                      <br>
-                     <p class="font-size-1 font-family-1 text-center margin-t-40 "><a href="#" class="color-5" id="card-footerColor">Mehr Erfahren ></a></p>
+                     <p class="font-size-1 font-family-1 text-center margin-t-40 "><a href="3-Price.html" class="color-5" id="card-footerColor">Mehr Erfahren ></a></p>
                   </div>
                </div>
             </div>
 
-            <div class="col-12 col-md-6 col-lg-4 color-3" style="padding-left: 20px; padding-right: 20px;">
+            <div class="col-12 col-md-6 col-lg-4 color-3" style="padding-left: 20px; padding-right: 20px;margin-bottom: 20px;">
                <div class="card">
                   <div class="card-body">
                      <div class="row d-flex justify-content-center align-items-center">
@@ -334,21 +341,21 @@
                      
                      <span class="font-size-26 font-family-1">CHF</span>
                      <span class="font-size-31 font-family-1" id="monthPrice2">699</span>
-                     <span class="font-size-4 font-family-1">pro Monat</span>
+                     <span class="font-size-4 font-family-1" id="monthly-2">pro Monat</span>
                      <br>
                      <span class="font-size-18 font-family-2">
                         Dieses Paket umfasst Werbe Kampagnen, Vertriebsketten Entwicklung sowie Webseiten Erstellung und Optimierung.
                      </span>
                      <br><br><br>
-                     <a href="3-Price.html" class="btn btn-custom-1 font-size-3 font-family-2 color-3" style="width: 100%;" id="card-buttonColor">Jetzt starten</a>
-                     <a href="https://calendly.com/" class="btn btn-custom-2 font-size-3 font-family-2 color-5" style="width: 100%;">Einen Anruf Vereinbaren</a>
+                     <a href="https://calendly.com/webtict23/meeting" class="btn btn-custom-1 font-size-3 font-family-2 color-3" style="width: 100%;" id="card-buttonColor">Jetzt Starten</a>
+                     <a href="https://calendly.com/webtict23/meeting" target="_blank" class="btn btn-custom-2 font-size-3 font-family-2 color-5" style="width: 100%;">Einen Anruf Vereinbaren</a>
                   </div>
          
                   <ul class="list-group list-group-flush"></ul>
          
                   <div class="card-body">
                      <p class="font-size-23 font-family-1">Dienste</p>
-                     <p class="font-size-32 font-family-2">Alles in unserem Basisplan...</p>
+                     <p class="font-size-32 font-family-2">Alles in unserem Standardplan...</p>
                      <div class="image-container">
                         <img src="images/check.svg" alt="check" width="auto" height="auto">
                         <span class="font-size-33 font-family-1 text-break">Vollständiges Anzeige Management </span>
@@ -365,13 +372,12 @@
                         <img src="images/x.svg" alt="fail" width="auto" height="auto">
                         <span class="font-size-33 font-family-2">Vollständige Automatisierung mit Webtict Plus</span>
                      </div>
-                     <br>
-                     <p class="font-size-1 font-family-1 text-center margin-t-40 "><a href="#" class="color-5" id="card-footerColor">Mehr Erfahren ></a></p>
+                     <p class="font-size-1 font-family-1 text-center margin-t-40 "><a href="3-Price.html" class="color-5" id="card-footerColor">Mehr Erfahren ></a></p>
                   </div>
                </div>
             </div>
 
-            <div class="col-12 col-md-6 col-lg-4" style="padding-left: 20px; padding-right: 20px;">
+            <div class="col-12 col-md-6 col-lg-4" style="padding-left: 20px; padding-right: 20px;margin-bottom: 20px;">
                <div class="card">
                   <div class="card-body">
                      <div class="row d-flex justify-content-center align-items-center">
@@ -384,21 +390,21 @@
                      </div>
                      <span class="font-size-26 font-family-1">CHF</span>
                      <span class="font-size-31 font-family-1" id="monthPrice3">999</span>
-                     <span class="font-size-4 font-family-1">pro Monat</span>
+                     <span class="font-size-4 font-family-1" id="monthly-3">pro Monat</span>
                      <br>
                      <span class="font-size-18 font-family-2">
                         Dieses Paket umfasst Werbekampagnen, Vertriebskettenentwicklung, Webseitenerstellung und -optimierung sowie die vollständige Automatisierung mit Webtict Plus.
                      </span>
                      <br><br>
-                     <a href="3-Price.html" class="btn btn-custom-1 font-size-3 font-family-2 color-3" style="width: 100%;" id="card-buttonColor">Jetzt starten</a>
-                     <a href="https://calendly.com/" type="button" class="btn btn-custom-2 font-size-3 font-family-2 color-5" style="width: 100%;">Einen Anruf Vereinbaren</a>
+                     <a href="https://calendly.com/webtict23/meeting" class="btn btn-custom-1 font-size-3 font-family-2 color-3" style="width: 100%;" id="card-buttonColor">Jetzt Starten</a>
+                     <a href="https://calendly.com/webtict23/meeting" target="_blank" type="button" class="btn btn-custom-2 font-size-3 font-family-2 color-5" style="width: 100%;">Einen Anruf Vereinbaren</a>
                   </div>
          
                   <ul class="list-group list-group-flush"></ul>
          
                   <div class="card-body">
                      <p class="font-size-23 font-family-1">Dienste</p>
-                     <p class="font-size-32 font-family-2">Alles in unserem Basisplan...</p>
+                     <p class="font-size-32 font-family-2">Alles in unserem Premium-Plan...</p>
                      <div class="image-container">
                         <img src="images/check.svg" alt="check" width="auto" height="auto">
                         <span class="font-size-33 font-family-1 text-break">Vollständiges Anzeige Management</span>
@@ -415,7 +421,7 @@
                         <img src="images/check.svg" alt="fail" width="auto" height="auto">
                         <span class="font-size-33 font-family-1 text-break">Vollständige Automatisierung mit Webtict Plus</span>
                      </div>
-                     <p class="font-size-1 font-family-1 text-center margin-t-40 "><a href="#" class="color-5" id="card-footerColor">Mehr Erfahren ></a></p>
+                     <p class="font-size-1 font-family-1 text-center margin-t-40 "><a href="3-Price.html" class="color-5" id="card-footerColor">Mehr Erfahren ></a></p>
                   </div>
                </div>
             </div>
@@ -498,45 +504,45 @@
       </div>
 
       <!-- div_6-->
-      <div class="row color-3" style="background-color: #000; width: auto; height: auto;" id="footer1-id" >
+      <div class="row color-3" style="background-color: #000; width: auto; height: auto;" >
          <div class="col-12 col-md-12 col-lg-4 color-1 group3-pl-50 ">
-            <img src="images/Logo.png" alt="logo" width="auto" height="auto" class="img-fluid">
+            <a href="index.html"><img src="images/Logo.png" alt="logo" width="auto" height="auto" class="img-fluid"></a>
          </div>
-         <div class="row col-12 col-md-12 col-lg-8 group3-p-150 text-break">
-            <div class="col-12 col-md-6 col-lg-4">
+         <div class="row col-12 col-md-12 col-lg-8 group3-pl-100 group3-pr-100 group3-pt-100 group3-pb-100 text-break">
+            <div class="col-12 col-md-6 col-lg-6 col-xl-6 col-xxl-4 group3-mb-20">
                <p class="group3-fontSize-24 font-family-1 group3-mb-20">Unsere Dienstleistungenr</p>
-               <p class="group3-fontSize-30 font-family-2 color-1 align-items-center d-flex">><span class="group3-fontSize-16 color-3 group3-ml-15">Einmalige Pakete</span></p>
-               <p class="group3-fontSize-30 font-family-2 color-1 align-items-center d-flex">><span class="group3-fontSize-16 color-3 group3-ml-15">1 Monats Pläne</span></p>
-               <p class="group3-fontSize-30 font-family-2 color-1 align-items-center d-flex">><span class="group3-fontSize-16 color-3 group3-ml-15">4 Monats Pläne</span></p>
-               <p class="group3-fontSize-30 font-family-2 color-1 align-items-center d-flex">><span class="group3-fontSize-16 color-3 group3-ml-15">12 Monats Pläne</span></p>
+               <a href="3-Price.html" class="text-decoration-none"><p class="group3-fontSize-30 font-family-2 color-1 align-items-center d-flex">><span class="group3-fontSize-16 color-3 group3-ml-15">Einmalige Pakete</span></p></a>
+               <a href="3-Price.html" class="text-decoration-none"><p class="group3-fontSize-30 font-family-2 color-1 align-items-center d-flex">><span class="group3-fontSize-16 color-3 group3-ml-15">1 Monats Pläne</span></p></a>
+               <a href="3-Price.html" class="text-decoration-none"><p class="group3-fontSize-30 font-family-2 color-1 align-items-center d-flex">><span class="group3-fontSize-16 color-3 group3-ml-15">4 Monats Pläne</span></p></a>
+               <a href="3-Price.html" class="text-decoration-none"><p class="group3-fontSize-30 font-family-2 color-1 align-items-center d-flex">><span class="group3-fontSize-16 color-3 group3-ml-15">12 Monats Pläne</span></p></a>
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-6 col-xl-6 col-xxl-4 group3-mb-20">
                <p class="group3-fontSize-24 font-family-1 group3-mb-20">Schnelle Links</p>
-               <p class="group3-fontSize-30 font-family-2 color-1 align-items-center d-flex">><span class="group3-fontSize-16 color-3 group3-ml-15">Über uns</span></p>
-               <p class="group3-fontSize-30 font-family-2 color-1 align-items-center d-flex">><span class="group3-fontSize-16 color-3 group3-ml-15">Preise/Dienstleistungen</span></p>
-               <p class="group3-fontSize-30 font-family-2 color-1 align-items-center d-flex">><span class="group3-fontSize-16 color-3 group3-ml-15">Portfolio</span></p>
+               <a href="2-About.html" class="text-decoration-none"><p class="group3-fontSize-30 font-family-2 color-1 align-items-center d-flex">><span class="group3-fontSize-16 color-3 group3-ml-15">Über uns</span></p></a>
+               <a href="3-Price.html" class="text-decoration-none"><p class="group3-fontSize-30 font-family-2 color-1 align-items-center d-flex">><span class="group3-fontSize-16 color-3 group3-ml-15">Preise/Dienstleistungen</span></p></a>
+               <a href="4-Portfolio.html" class="text-decoration-none"><p class="group3-fontSize-30 font-family-2 color-1 align-items-center d-flex">><span class="group3-fontSize-16 color-3 group3-ml-15">Portfolio</span></p></a>
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-6 col-xl-6 col-xxl-4 group3-mb-20">
                <p class="group3-fontSize-24 font-family-1 group3-mb-20">Kontakt</p>
                <p class="group3-fontSize-30 font-family-2 color-1 align-items-center d-flex">><span class="group3-fontSize-16 color-3 group3-ml-15">maximilian.metzler@webtict.com</span></p>
-               <p class="group3-fontSize-30 font-family-2 color-1 align-items-center d-flex">><span class="group3-fontSize-16 color-3 group3-ml-15">+41 78 111 111</span></p>
+               <p class="group3-fontSize-30 font-family-2 color-1 align-items-center d-flex">><span class="group3-fontSize-16 color-3 group3-ml-15">+41 782103919</span></p>
             </div>
          </div>
       </div>
 
       <!-- div_7-->
-      <div class="row text-center align-items-center background-color footer-pl-150 footer-pr-150" id="footer2-id">
+      <div class="row text-center align-items-center background-color footer-pl-150 footer-pr-150">
          <div class="col-12 col-md-6 col-lg-3 color-3 text-center text-break">
-            <a href="6-Datenschutzbestimmungen.html" class="color-3"><span class="font-size-15 font-family-2">Datenschutzbestimmungen</span></a>
+            <a href="6-Datenschutzbestimmungen.html" class="color-3 text-decoration-none"><span class="font-size-15 font-family-2">Datenschutzbestimmungen</span></a>
          </div>
          <div class="col-12 col-md-6 col-lg-3 color-3 text-center">
-            <a href="7-Bedingungen.html" class="color-3"><span class="font-size-15 font-family-2">Bedingungen und Konditionen</span></a>
+            <a href="7-Bedingungen.html" class="color-3 text-decoration-none"><span class="font-size-15 font-family-2">Bedingungen und Konditionen</span></a>
          </div>
          <div class="col-12 col-md-6 col-lg-3 color-3" style="text-align: center;">
-            <a href="8-Impressum.html" class="color-3"><span class="font-size-15 font-family-2">Impressum</span></a>
+            <a href="8-Impressum.html" class="color-3 text-decoration-none"><span class="font-size-15 font-family-2">Impressum</span></a>
          </div>
          <div class="col-12 col-md-6 col-lg-3 color-3" style="text-align: center;">
-            <a href="9-Cookies.html" class="color-3"><span class="font-size-15 font-family-2">Cookies</span></a>
+            <a href="9-Cookies.html" class="color-3 text-decoration-none"><span class="font-size-15 font-family-2">Cookies</span></a>
          </div>
       </div>
 </div>

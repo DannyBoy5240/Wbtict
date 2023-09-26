@@ -1,9 +1,3 @@
-document.addEventListener('DOMContentLoaded', function() {
-   const button = document.querySelector('.accordion-header button');
-   button.addEventListener('click', function() {
-      button.classList.toggle('active');
-   });
-});
 
 $(document).ready(function() {
    var counter1 = 0;
@@ -68,4 +62,19 @@ $(document).ready(function() {
    observer.observe(document.getElementById('counter1'));
    observer.observe(document.getElementById('counter2'));
    observer.observe(document.getElementById('counter3'));
+
+   $('.accordion-button').on('click', function() {
+      $('.accordion').on('show.bs.collapse', function(e) {
+         $(e.target).prev('.accordion-header').find('.accordion-button').addClass('active');
+         $(e.target).prev('.accordion-header').find('.accordion-button').addClass('header');
+         console.log("------------show------------");
+      });
+
+      $('.accordion').on('hide.bs.collapse', function(e) {
+         $(e.target).prev('.accordion-header').find('.accordion-button').removeClass('active');
+         $(e.target).prev('.accordion-header').find('.accordion-button').removeClass('header');
+         console.log("------------hide------------");
+      });
+   });
+   $('.accordion-button:first').trigger('click');
 });
