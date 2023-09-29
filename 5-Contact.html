@@ -11,28 +11,11 @@
    </head>
 
    <script>
-      // Get the select element
-      const select = document.getElementById('mySelect');
-
-      // Get the email link element
-      const emailLink = document.querySelector('a[href^="mailto:"]');
-
-      // Listen for the click event on the email link
-      emailLink.addEventListener('click', function (event) {
-          // Prevent the default behavior of the link
-          event.preventDefault();
-
-          // Get the selected option
-          const selectedOption = select.options[select.selectedIndex];
-
-          // Get the text content of the selected option
-          const optionText = selectedOption.textContent.trim();
-
-          // Construct the mailto URL with the selected option text as the subject
-          const mailtoURL = `mailto:maximilian.metzler@webtict.com?subject=${encodeURIComponent(optionText)}`;
-
-          // Open the mail client with the constructed mailto URL
-          window.location.href = mailtoURL;
+      document.getElementById("card-buttonColor").addEventListener("click", function() {
+         var emailInput = document.getElementById("email").value;
+         var subject = encodeURIComponent(emailInput); // Encode email input for subject
+         var mailtoLink = "mailto:maximilian.metzler@webtict.com?subject=" + subject;
+         window.location.href = mailtoLink;
       });
   </script>
 
