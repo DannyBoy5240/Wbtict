@@ -102,6 +102,11 @@
    src: url(Objectivity-Light.otf);
  }
 
+ @font-face {
+   font-family: 'vtc-font';
+   src: url(StaticBuzz.ttf);
+ }
+
 .font-family-1 {
    font-family: 'Montserrat', sans-serif;
 }
@@ -109,6 +114,16 @@
 .font-family-2 {
    font-family: 'custom-font', sans-serif;
 }
+
+.font-family-3 {
+   font-family: 'vtc-font', sans-serif;
+}
+
+.blur-text {
+   font-size: 40px;
+   color: transparent;
+   text-shadow: 0 0 8px #ffffff;
+ }
 
 .font-size-1 {
    font-size: 24px;

@@ -10,6 +10,32 @@
       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
    </head>
 
+   <script>
+      // Get the select element
+      const select = document.getElementById('mySelect');
+
+      // Get the email link element
+      const emailLink = document.querySelector('a[href^="mailto:"]');
+
+      // Listen for the click event on the email link
+      emailLink.addEventListener('click', function (event) {
+          // Prevent the default behavior of the link
+          event.preventDefault();
+
+          // Get the selected option
+          const selectedOption = select.options[select.selectedIndex];
+
+          // Get the text content of the selected option
+          const optionText = selectedOption.textContent.trim();
+
+          // Construct the mailto URL with the selected option text as the subject
+          const mailtoURL = `mailto:maximilian.metzler@webtict.com?subject=${encodeURIComponent(optionText)}`;
+
+          // Open the mail client with the constructed mailto URL
+          window.location.href = mailtoURL;
+      });
+  </script>
+
    <body style="overflow-x: hidden;">    
       <div class="container-fluid full-width-container">
 
@@ -106,12 +132,15 @@
                         <option>
                            Premium Plan 12 Monate
                         </option>
+                        <option>
+                           Andere
+                        </option>
                      </select>
                   </div>
                </div>
 
                <div class="align-items-center justify-content-center d-flex contact-pr-300 contact-pl-300">
-                  <a href="https://calendly.com/webtict23/meeting" target="_blank" type="button" class="btn btn-custom-1 contact-fontSize-28 font-family-2 color-3 " style="width: 100%; padding: 20px;" id="card-buttonColor">Jetzt starten</a>
+                  <a href="mailto:maximilian.metzler@webtict.com?subject=" target="_blank" type="button" class="btn btn-custom-1 contact-fontSize-28 font-family-2 color-3 " style="width: 100%; padding: 20px;" id="card-buttonColor">Jetzt starten</a>
                </div>
                
             </form>
