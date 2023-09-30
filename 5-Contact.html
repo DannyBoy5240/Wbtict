@@ -10,25 +10,42 @@
       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
    </head>
 
-   <!-- <script>
-      document.getElementById("card-buttonColor").addEventListener("click", function() {
-         var emailInput = document.getElementById("email").value;
-         var subject = encodeURIComponent(emailInput); // Encode email input for subject
-         var mailtoLink = "mailto:maximilian.metzler@webtict.com?subject=" + subject;
-         window.location.href = mailtoLink;
-      });
-  </script> -->
    <script>
-        // Get the select element
-        const select = document.getElementById('mySelect');
+         // Get the select element
+      //    const select = document.getElementById('mySelect');
+      //    var firstName = document.getElementById("firstName")?.value;
+      //    var lastName = document.getElementById("lastName")?.value;
 
-        // Get the email link element
-        const emailLink = document.querySelector('a[href^="mailto:"]');
+      //    // Get the email link element
+      //    const emailLink = document.querySelector('a[href^="mailto:"]');
 
-        // Listen for the click event on the email link
-        emailLink.addEventListener('click', function (event) {
-            // Prevent the default behavior of the link
-            event.preventDefault();
+      //    // Listen for the click event on the email link
+      //    emailLink?.addEventListener('click', function (event) {
+      //       // Prevent the default behavior of the link
+      //       event.preventDefault();
+
+      //       // Get the selected option
+      //       const selectedOption = select.options[select.selectedIndex];
+
+      //       // Get the text content of the selected option
+      //       const optionText = selectedOption.textContent.trim();
+
+      //       // Construct the mailto URL with the selected option text as the subject
+      //       const mailtoURL = `mailto:maximilian.metzler@webtict.com?subject=${encodeURIComponent(optionText)+firstName+lastName}`;
+
+      //       console.log("testing mailto -> ", mailtoURL);
+
+      //       // Open the mail client with the constructed mailto URL
+      //       window.location.href = mailtoURL;
+      //   });
+
+        function testFunc() {
+            const select = document.getElementById('mySelect');
+            var firstName = document.getElementById("firstName")?.value;
+            var lastName = document.getElementById("lastName")?.value;
+
+            // Get the email link element
+            const emailLink = document.querySelector('a[href^="mailto:"]');
 
             // Get the selected option
             const selectedOption = select.options[select.selectedIndex];
@@ -37,12 +54,14 @@
             const optionText = selectedOption.textContent.trim();
 
             // Construct the mailto URL with the selected option text as the subject
-            const mailtoURL = `mailto:maximilian.metzler@webtict.com?subject=${encodeURIComponent(optionText)}`;
+            const mailtoURL = `mailto:maximilian.metzler@webtict.com?subject=${encodeURIComponent(optionText) + firstName + " " + lastName}`;
 
-            // Open the mail client with the constructed mailto URL
-            window.location.href = mailtoURL;
-        });
-    </script>
+            console.log("testing mailto -> ", mailtoURL);
+
+            // window.location.href = mailtoURL;
+            window.open(mailtoURL, '_blank');
+        }
+   </script>
 
    <body style="overflow-x: hidden;">    
       <div class="container-fluid full-width-container">
@@ -88,11 +107,11 @@
                <div class="row">
                   <div class="col-12 col-md-12 col-lg-6 contact-mb-50">
                      <p>Ihr Nachname</p>
-                     <input type="name" class="form-control font-family-2 contact-fontSize-28 contact-p-15 input-customStyle" id="name" placeholder="Musterman" name="name">
+                     <input type="name" class="form-control font-family-2 contact-fontSize-28 contact-p-15 input-customStyle" id="firstName" placeholder="Musterman" name="firstName">
                   </div>
                   <div class="col-12 col-md-12 col-lg-6 contact-mb-50">
                      <p>Ihr Vorname</p>
-                     <input type="text" class="form-control font-family-2 contact-fontSize-28 contact-p-15 input-customStyle" id="vorname" placeholder="Max" name="vorname">
+                     <input type="name" class="form-control font-family-2 contact-fontSize-28 contact-p-15 input-customStyle" id="lastName" placeholder="Max" name="lastName">
                   </div>
                </div>
    
@@ -147,8 +166,9 @@
                   </div>
                </div>
 
-               <div class="align-items-center justify-content-center d-flex contact-pr-300 contact-pl-300">
-                  <a href="mailto:maximilian.metzler@webtict.com?subject=" target="_blank" type="button" class="btn btn-custom-1 contact-fontSize-28 font-family-2 color-3 " style="width: 100%; padding: 20px;" id="card-buttonColor">Jetzt starten</a>
+               <div class="align-items-center justify-content-center d-flex contact-pr-300 contact-pl-300" >
+                  <button onClick="testFunc()" class="btn btn-custom-1 contact-fontSize-28 font-family-2 color-3" style="width: 100%; padding: 20px;">Jetzt starten</button>
+                  <!-- <a href="mailto:maximilian.metzler@webtict.com?subject=" type="button" class="btn btn-custom-1 contact-fontSize-28 font-family-2 color-3 " style="width: 100%; padding: 20px;" id="card-buttonColor">Jetzt starten</a> -->
                </div>
                
             </form>
