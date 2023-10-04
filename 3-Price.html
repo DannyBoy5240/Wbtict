@@ -6,6 +6,14 @@
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
       <link href="main.css" rel="stylesheet">
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+      <link rel="stylesheet" href="assets/css/aos.css">
+      
+      <script src="assets/js/glightbox.min.js"></script>
+      <script src="assets/js/aos.js"></script>
+      <script src="assets/js/swiper-bundle.min.js"></script>
+      <script src="assets/js/purecounter_vanilla.js"></script>
+      <script src="assets/js/main.js"></script>
    </head>
 
    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -144,11 +152,11 @@
 
       <!-- div_2 -->
       <div class="min-size">
-         <div class="price2-p-70">
+         <div class="price2-p-70" data-aos="fade-down">
             <p class="price2-fontSize-89 font-family-1 color-5">Wir haben einen <span class="color-1">Plan</span>,<br>der perfekt für Sie ist.</p>
          </div>
    
-         <div class="price2-fontSize-24 font-family-1 price2-mb-70 price2-ml-70 price2-mr-70">
+         <div class="price2-fontSize-24 font-family-1 price2-mb-70 price2-ml-70 price2-mr-70" data-aos="fade-up">
             <div class="border-box d-inline-block">
                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
                <label class="btn btn-price2" for="btnradio1">Einmalig</label>
@@ -166,14 +174,14 @@
       </div>
 
       <!-- div_3 -->
-      <div class="min-size" id="price-example-id">
+      <div class="min-size" id="price-example-id" data-aos="fade-up">
       
          <div class="row px-lg-5 mx-0" style="width: 100%; height: auto;">
 
             <div class="col-12 col-md-6 col-lg-6 home-pl-2 home-pr-2 home-mb-1">
                <div class="card">
                   <div class="card-body card-body-3" >
-                     <p class="font-size-30 font-family-1 text-center" id="card-titleColor">Grafik</p>
+                     <p class="font-size-30 font-family-1 text-center price-after-pb price-after-pt" id="card-titleColor">Grafik</p>
                      <div class="text-center price-example-pl price-example-pr">
                         <span class="font-size-26 font-family-1">CHF</span>
                         <span class="font-size-31 font-family-1" id="monthPrice1">699</span>
@@ -267,8 +275,14 @@
                            </div>
                         </div>
                      </div>
-                     <p class="font-size-1 font-family-1 text-center margin-t-40" style="margin-bottom: 0;"><a href="3-Price.html" class="color-5 text-decoration-none" id="card-footerColor">Mehr Erfahren ></a></p>
                   </div>
+
+                  <div class="card-footer">
+                     <p class="font-size-1 font-family-1 text-center margin-t-40">
+                        <a href="3-Price.html" class="color-5 text-decoration-none" id="card-footerColor">Mehr Erfahren ></a>
+                     </p>
+                  </div>
+
                </div>
             </div>
 
@@ -351,7 +365,12 @@
                            </div>
                         </div>
                      </div>
-                     <p class="font-size-1 font-family-1 text-center margin-t-40" style="margin-bottom: 0;"><a href="3-Price.html" class="color-5 text-decoration-none" id="card-footerColor">Mehr Erfahren ></a></p>
+                  </div>
+
+                  <div class="card-footer">
+                     <p class="font-size-1 font-family-1 text-center margin-t-40">
+                        <a href="3-Price.html" class="color-5 text-decoration-none" id="card-footerColor">Mehr Erfahren ></a>
+                     </p>
                   </div>
                </div>
             </div>
@@ -361,31 +380,34 @@
 
 
       <!-- div_4 -->
-      <div class="min-size" id="price-id">
+      <div class="min-size" id="price-id" data-aos="fade-up">
       
          <div class="row px-lg-5 mx-0" style="width: 100%; height: auto;">
 
             <div class="col-12 col-md-6 col-lg-4 home-pl-2 home-pr-2 home-mb-1">
                <div class="card">
                   <div class="card-body card-body-3" >
-                     <div class="row d-flex justify-content-center align-items-center">
-                        <div class="col-8 col-md-9 col-lg-9  align-items-center d-flex">
+                     <!-- <div class="row d-flex justify-content-center align-items-center">
+                        <div class="col-8 col-md-9 col-lg-9  align-items-center d-flex"> -->
                            <p class="font-size-30 font-family-1" id="card-titleColor">Basisplan</p>
-                        </div>
+                        <!-- </div>
                         <div class="col-4 col-md-3 col-lg-3">
                            <span class="badge rounded-pill badge-custom font-size-8 font-family-1 " id="card-badgeColor">Beliebt</span>
                         </div>
+                     </div> -->
+                     <div class="price-month1-pt">
+                        <span class="font-size-26 font-family-1">CHF</span>
+                        <span class="font-size-31 font-family-1" id="monthPrice1">499</span>
+                        <span class="font-size-4 font-family-1" id="monthly-1">pro monat</span>
+                        <br>
+                        <span class="font-size-18 font-family-2">
+                           Dieses Paket umfasst Werbe Kampagnen Erstellung.
+                        </span>
+                        <br><br>
+                        <a href="https://calendly.com/webtict23/meeting" type="button" class="btn btn-custom-1 font-size-3 font-family-2 color-3" style="width: 100%;" id="card-buttonColor">Jetzt Starten</a>
+                        <a href="https://calendly.com/webtict23/meeting" type="button" target="_blank" class="btn btn-custom-2 font-size-3 font-family-2 color-5" style="width: 100%;">Einen Anruf Vereinbaren</a>
                      </div>
-                     <span class="font-size-26 font-family-1">CHF</span>
-                     <span class="font-size-31 font-family-1" id="monthPrice1">499</span>
-                     <span class="font-size-4 font-family-1" id="monthly-1">pro monat</span>
-                     <br>
-                     <span class="font-size-18 font-family-2">
-                        Dieses Paket umfasst Werbe Kampagnen Erstellung.
-                     </span>
-                     <br><br>
-                     <a href="https://calendly.com/webtict23/meeting" type="button" class="btn btn-custom-1 font-size-3 font-family-2 color-3" style="width: 100%;" id="card-buttonColor">Jetzt Starten</a>
-                     <a href="https://calendly.com/webtict23/meeting" type="button" target="_blank" class="btn btn-custom-2 font-size-3 font-family-2 color-5" style="width: 100%;">Einen Anruf Vereinbaren</a>
+                     
                   </div>
          
                   <ul class="list-group list-group-flush"></ul>
@@ -417,8 +439,14 @@
                          </svg>
                         <span class="caption_font">Vollständige Automatisierung</span>
                      </div>
-                     <p class="font-size-1 font-family-1 text-center margin-t-40" style="margin-bottom: 0;"><a href="3-Price.html" class="color-5 text-decoration-none" id="card-footerColor">Mehr Erfahren ></a></p>
                   </div>
+
+                  <div class="card-footer">
+                     <p class="font-size-1 font-family-1 text-center margin-t-40">
+                        <a href="3-Price.html" class="color-5 text-decoration-none" id="card-footerColor">Mehr Erfahren ></a>
+                     </p>
+                  </div>
+
                </div>
             </div>
 
@@ -426,16 +454,18 @@
                <div class="card">
                   <div class="card-body card-body-3">
                      <p class="font-size-30 font-family-1 " id="card-titleColor">Standardplan</p>
-                     <span class="font-size-26 font-family-1">CHF</span>
-                     <span class="font-size-31 font-family-1" id="monthPrice2">699</span>
-                     <span class="font-size-4 font-family-1" id="monthly-2">pro Monat</span>
-                     <br>
-                     <span class="font-size-18 font-family-2">
-                        Dieses Paket umfasst Werbe Kampagnen, Vertriebsketten Entwicklung sowie Webseiten Erstellung und Optimierung.
-                     </span>
-                     <br><br>
-                     <a href="https://calendly.com/webtict23/meeting" class="btn btn-custom-1 font-size-3 font-family-2 color-3" style="width: 100%;" id="card-buttonColor">Jetzt Starten</a>
-                     <a href="https://calendly.com/webtict23/meeting" target="_blank" class="btn btn-custom-2 font-size-3 font-family-2 color-5" style="width: 100%;">Einen Anruf Vereinbaren</a>
+                     <div class="price-month2-pt">
+                        <span class="font-size-26 font-family-1">CHF</span>
+                        <span class="font-size-31 font-family-1" id="monthPrice2">699</span>
+                        <span class="font-size-4 font-family-1" id="monthly-2">pro Monat</span>
+                        <br>
+                        <span class="font-size-18 font-family-2">
+                           Dieses Paket umfasst Werbe Kampagnen, Vertriebsketten Entwicklung sowie Webseiten Erstellung und Optimierung.
+                        </span>
+                        <br><br>
+                        <a href="https://calendly.com/webtict23/meeting" class="btn btn-custom-1 font-size-3 font-family-2 color-3" style="width: 100%;" id="card-buttonColor">Jetzt Starten</a>
+                        <a href="https://calendly.com/webtict23/meeting" target="_blank" class="btn btn-custom-2 font-size-3 font-family-2 color-5" style="width: 100%;">Einen Anruf Vereinbaren</a>
+                     </div>
                   </div>
          
                   <ul class="list-group list-group-flush"></ul>
@@ -467,8 +497,14 @@
                          </svg>
                         <span class="caption_font">Vollständige Automatisierung</span>
                      </div>
-                     <p class="font-size-1 font-family-1 text-center margin-t-40 " style="margin-bottom: 0;"><a href="3-Price.html" class="color-5 text-decoration-none" id="card-footerColor">Mehr Erfahren ></a></p>
                   </div>
+
+                  <div class="card-footer">
+                     <p class="font-size-1 font-family-1 text-center margin-t-40">
+                        <a href="3-Price.html" class="color-5 text-decoration-none" id="card-footerColor">Mehr Erfahren ></a>
+                     </p>
+                  </div>
+
                </div>
             </div>
 
@@ -517,8 +553,14 @@
                          </svg>
                          <span class="caption">Vollständige Automatisierung</span>
                      </div>
-                     <p class="font-size-1 font-family-1 text-center align-items-start margin-t-40" style="margin-bottom: 0;"><a href="3-Price.html" class="color-5 text-decoration-none" id="card-footerColor">Mehr Erfahren ></a></p>
                   </div>
+
+                  <div class="card-footer">
+                     <p class="font-size-1 font-family-1 text-center margin-t-40">
+                        <a href="3-Price.html" class="color-5 text-decoration-none" id="card-footerColor">Mehr Erfahren ></a>
+                     </p>
+                  </div>
+
                </div>
             </div>
             
@@ -527,12 +569,13 @@
 
       <!-- div_5 -->
       <div class=" color-3 group1-p-100 background-color color-3 min-size price-text-style price-p" style="width: auto; height: auto; margin-top: 50px;" id="description-id">
-         <div>
+
+         <div data-aos="fade-down">
             <p class="price-fontSize-1 font-family-1">Unsere Dienstleistungen</p>
             <p class="price-fontSize-2 font-family-2">Hier Erfahren Sie alles über unsere Pakete</p>
          </div>
 
-         <div class="row">
+         <div class="row" data-aos="fade-up">
             <div class="col-12 col-md-4 col-lg-4  group1-mb-100">
                <div class="align-items-center d-flex price-mb-1 price-text-style">
                   <span style="width: 5vw; height:5vw; border-radius: 50%; background-color: white;"></span>
@@ -564,7 +607,7 @@
             </div>
          </div>
 
-         <div class="row group1-mt-100">
+         <div class="row group1-mt-100" data-aos="fade-up">
             <div class="col-12 col-md-4 col-lg-4 group1-mb-100">
                <div class="align-items-center d-flex price-text-style price-mb-1">
                   <span style="width: 5vw; height:5vw; border-radius: 50%; background-color: white;"></span>
@@ -627,18 +670,20 @@
       </div>
 
       <!-- div_7 -->
-      <div class="row text-center align-items-center background-color footer-pl-150 footer-pr-150 min-size">
-         <div class="col-12 col-md-6 col-lg-3 color-3 text-center text-break">
-            <a href="6-Datenschutzbestimmungen.html" class="color-3 text-decoration-none"><span class="font-size-15 font-family-2">Datenschutzbestimmungen</span></a>
-         </div>
-         <div class="col-12 col-md-6 col-lg-3 color-3 text-center">
-            <a href="7-Bedingungen.html" class="color-3 text-decoration-none"><span class="font-size-15 font-family-2">Bedingungen und Konditionen</span></a>
-         </div>
-         <div class="col-12 col-md-6 col-lg-3 color-3" style="text-align: center;">
-            <a href="8-Impressum.html" class="color-3 text-decoration-none"><span class="font-size-15 font-family-2">Impressum</span></a>
-         </div>
-         <div class="col-12 col-md-6 col-lg-3 color-3" style="text-align: center;">
-            <a href="9-Cookies.html" class="color-3 text-decoration-none"><span class="font-size-15 font-family-2">Cookies</span></a>
+      <div class="row background-color min-size ">
+         <div class="d-flex row-custom" style="flex-direction: row; justify-content: space-around;">
+            <div class="col-custom mb-1 mt-1">
+               <a href="6-Datenschutzbestimmungen.html" class="color-3 text-decoration-none"><span class="font-size-15 font-family-2">Datenschutzbestimmungen</span></a>
+            </div>
+            <div class="col-custom mb-1 mt-1">
+               <a href="7-Bedingungen.html" class="color-3 text-decoration-none"><span class="font-size-15 font-family-2">Bedingungen und Konditionen</span></a>
+            </div>
+            <div class="col-custom mb-1 mt-1">
+               <a href="8-Impressum.html" class="color-3 text-decoration-none"><span class="font-size-15 font-family-2">Impressum</span></a>
+            </div>
+            <div class="col-custom mb-1 mt-1">
+               <a href="9-Cookies.html" class="color-3 text-decoration-none"><span class="font-size-15 font-family-2">Cookies</span></a>
+            </div>
          </div>
       </div>
 </div>
